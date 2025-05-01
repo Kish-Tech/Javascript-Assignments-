@@ -3,35 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dynamic Javascript Demo</title>
+    <title>Event Assignment</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1 id="main-heading">Welcome to Javascript Learning Website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <p id="dynamic-text">The text will change when button is clicked</p>
-            <button id="change-btn">Change Text & Style</button>
-        </section>
+    <h1> Creation of interactive event handling using Javascript</h1>
 
-        <section>
-            <button id="toggle-btn">Add/Remove Box</button>
-            <div id="box-container"></div>
-        </section>
-    </main>
+    <!-- Button Click -->
+    <button id="clickBtn">click me</button>
 
-    <footer>
-        <p>@OneTech Solutions, CharlesKiunyu321@gmail.com</p>
+     <!-- Hover effect -->
+    <div id="hoverDiv">Hover example paragraph</div>
 
-    </footer>
+    <!-- keypress detection -->
+    <input type="text" id="keyInput" placeholder="Press a key" />
+
+    <!-- Double click or long press effect -->
+    <button id="secretBtn">Double-click or long press Me</button>
+
+    <!-- changing text or color in button -->
+    <button id="colorChangeBtn">Click to change color</button>
+
+    <!-- image gallery -->
+    <div id="gallery">
+        <img id="galleryImage" src="js.png" alt="Javascript" />
+        <button id="nextImageBtn">Next Image</button>
+
+    </div>
+      
+    <!-- tabs -->
+    <div class="tabs">
+        <button class="tab-button" data-tab="tab1">Tab 1</button>
+        <button class="tab-button" data-tab="tab2">Tab 2</button>
+    </div>
+    <div class="tab-content" id="tab1">Content for Tab 1</div>
+    <div class="tab-button" id="tab2" style="display: none;">Content for Tab 2</div>
+
+    <!-- validation of forms -->
+    <form id="myForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <button type="submit">Submit</button>
+    </form>
+
+    <form id="emailForm">
+        <input type="email" id="email" placeholder="support@gmail.com" required />
+        <button type="submit">Submit</button>
+    </form>
+
+    <form id="passwordForm">
+        <input type="password" id="password" placeholder="@#$$%yuyryt98Y" required />
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="script.js"></script>
 </body>
 </html>
